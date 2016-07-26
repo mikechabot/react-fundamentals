@@ -7,18 +7,28 @@ export default class Root extends React.Component {
         this.state = {
             names: ['Foo', 'Bar', 'Baz']
         };
+        this._addToList = this._addToList.bind(this);
+    }
+
+    _addToList() {
+        const { names } = this.state;
+        names.push(Math.random());
+        this.setState({ names });
     }
 
     render() {
         const { names } = this.state;
         return (
-            <ol>
-                {
-                    names.map((name, index) => (
-                        <li key={index}>{ name }</li>
-                    ))
-                }
-            </ol>
+            <div>
+                <button onClick={this._addToList}>Add Random Number</button>
+                <ol>
+                    {
+                        names.map((name, index) => (
+                            <li key={index}>{ name }</li>
+                        ))
+                    }
+                </ol>
+            </div>
         )
     }
 }

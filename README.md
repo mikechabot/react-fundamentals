@@ -1,9 +1,9 @@
 # react-fundamentals
 React fundamentals class for BU's CS department
 
-## Lesson 7
+## Lesson 8
 
-Generating components from an array
+Example of adding dynamic elements to a rendered array.
 
 ### Get Started
 1. git clone https://github.com/mikechabot/react-fundamentals.git
