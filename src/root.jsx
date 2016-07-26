@@ -1,14 +1,25 @@
 import React from 'react';
 
 export default class Root extends React.Component {
+
+    constructor() {
+        super();
+        this.state = {
+            text: 'This is some text'
+        };
+    }
+
+    update(event) {
+        this.setState({
+            text: event.target.value
+        })
+    }
+
     render() {
-        const { color, alert } = this.props;
         return (
             <h1>
-                The color is&nbsp;
-                <span style={{ color }} onClick={alert}>
-                    { color }
-                </span>
+                <div>{ this.state.text }</div>
+                <input type="text" onChange={(event) => this.update(event)} />
             </h1>
         )
     }
