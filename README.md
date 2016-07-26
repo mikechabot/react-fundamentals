@@ -1,9 +1,9 @@
 # react-fundamentals
 React fundamentals class for BU's CS department
 
-## Lesson 2
+## Lesson 3
 
-Simple example of using `props`.
+Using props for dynamic purposes
 
 ### Get Started
 1. git clone https://github.com/mikechabot/react-boilerplate.git
