@@ -7,6 +7,7 @@ export default class Root extends React.Component {
         this.state = {
             text: 'This is some text'
         };
+        this.update = this.update.bind(this);
     }
 
     update(event) {
@@ -17,10 +18,10 @@ export default class Root extends React.Component {
 
     render() {
         return (
-            <h1>
-                <div>{ this.state.text }</div>
-                <input type="text" onChange={(event) => this.update(event)} />
-            </h1>
+            <div>
+                <h1>{ this.state.text }</h1>
+                <input type="text" onChange={this.update} />
+            </div>
         )
     }
 }
