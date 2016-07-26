@@ -12,7 +12,7 @@ export default class Root extends React.Component {
             ]
         };
         this._addTodo = this._addTodo.bind(this);
-        this._markAsComplete = this._markAsComplete.bind(this);
+        this._toggleComplete = this._toggleComplete.bind(this);
         this._removeTodo = this._removeTodo.bind(this);
     }
 
@@ -26,7 +26,7 @@ export default class Root extends React.Component {
         }
     }
 
-    _markAsComplete(index) {
+    _toggleComplete(index) {
         const { todos } = this.state;
         const todo = todos[index];
         todo.completed = !todo.completed;
@@ -51,7 +51,7 @@ export default class Root extends React.Component {
                             <TodoItem
                                 key={index}
                                 todo={todo}
-                                onComplete={this._markAsComplete}
+                                onComplete={this._toggleComplete}
                                 onRemove={this._removeTodo}
                                 index={index}
                             />
