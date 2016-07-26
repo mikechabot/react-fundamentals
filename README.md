@@ -1,9 +1,9 @@
 # react-fundamentals
 React fundamentals class for BU's CS department
 
-## Lesson 4
+## Lesson 5
 
-Managing simple `state` within a component using `setState`.
+Utilizing parent/child relationships to update parent state.
 
 ### Get Started
 1. git clone https://github.com/mikechabot/react-fundamentals.git

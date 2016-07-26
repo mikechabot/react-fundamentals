@@ -19,8 +19,19 @@ export default class Root extends React.Component {
     render() {
         return (
             <div>
-                <h1>{ this.state.text }</h1>
-                <input type="text" onChange={this.update} />
+                <MyInputAndText text={this.state.text} update={this.update} />
+            </div>
+        )
+    }
+}
+
+class MyInputAndText extends React.Component {
+    render() {
+        const { text, update } = this.props;
+        return (
+            <div>
+                <h1>{ text }</h1>
+                <input type="text" onChange={update} />
             </div>
         )
     }
