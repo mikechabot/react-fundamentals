@@ -1,38 +1,49 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 
 export default class Root extends React.Component {
 
     constructor() {
         super();
         this.state = {
-            text: 'This is some text'
+            red: 0,
+            green: 0,
+            blue: 0
         };
         this.update = this.update.bind(this);
     }
 
     update(event) {
         this.setState({
-            text: event.target.value
+            red: ReactDOM.findDOMNode(this.refs.red).value,
+            green: ReactDOM.findDOMNode(this.refs.green).value,
+            blue: ReactDOM.findDOMNode(this.refs.blue).value
         })
     }
 
     render() {
         return (
             <div>
-                <MyInputAndText text={this.state.text} update={this.update} />
+
+                <RangeSlider ref="red" update={this.update} />
+                <div>{ this.state.red }</div>
+
+                <RangeSlider ref="green" update={this.update} />
+                <div>{ this.state.green }</div>
+
+                <RangeSlider ref="blue" update={this.update} />
+                <div>{ this.state.blue }</div>
+
             </div>
         )
     }
 }
 
-class MyInputAndText extends React.Component {
+class RangeSlider extends React.Component {
     render() {
-        const { text, update } = this.props;
+        const { update } = this.props;
         return (
-            <div>
-                <h1>{ text }</h1>
-                <input type="text" onChange={update} />
-            </div>
+            <input type="range" onChange={update} min="0" max="255" />
         )
     }
 }

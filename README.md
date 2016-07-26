@@ -1,9 +1,9 @@
 # react-fundamentals
 React fundamentals class for BU's CS department
 
-## Lesson 5
+## Lesson 6
 
-Utilizing parent/child relationships to update parent state.
+Example of using `refs` instead of `state`.
 
 ### Get Started
 1. git clone https://github.com/mikechabot/react-fundamentals.git
