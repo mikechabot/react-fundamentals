@@ -1,9 +1,9 @@
 # react-fundamentals
 React fundamentals class for BU's CS department
 
-## Lesson 6
+## Lesson 7
 
-Example of using `refs` instead of `state`.
+Generating components from an array
 
 ### Get Started
 1. git clone https://github.com/mikechabot/react-fundamentals.git
