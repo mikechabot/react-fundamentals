@@ -2,10 +2,13 @@ import React from 'react';
 
 export default class Root extends React.Component {
     render() {
-        var color = this.props.color;
+        const { color } = this.props;
         return (
             <h1>
-                The color is { color }
+                The color is&nbsp;
+                <span style={{ color }}>
+                    { color }
+                </span>
             </h1>
         )
     }

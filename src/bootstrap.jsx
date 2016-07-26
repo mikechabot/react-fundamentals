@@ -3,6 +3,6 @@ import ReactDOM from 'react-dom';
 import Root from './root.jsx';
 
 ReactDOM.render(
-    <Root color="red" id="2334" />,
+    <Root color="blue" />,
     document.getElementById('myApp')
 );
