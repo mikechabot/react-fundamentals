@@ -1,9 +1,9 @@
 # react-fundamentals
 React fundamentals class for BU's CS department
 
-## Lesson 3
+## Lesson 4
 
-Using props for dynamic purposes
+Managing simple `state` within a component using `setState`.
 
 ### Get Started
 1. git clone https://github.com/mikechabot/react-fundamentals.git
