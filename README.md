@@ -1,9 +1,9 @@
 # react-fundamentals
 React fundamentals class for BU's CS department
 
-## Lesson 9
+## Lesson 10
 
-Example of dynamically popping from a rendered array.
+Example of a very simple todo app.
 
 ### Get Started
 1. git clone https://github.com/mikechabot/react-fundamentals.git
